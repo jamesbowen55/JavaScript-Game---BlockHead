@@ -1,4 +1,4 @@
-BlockHead 
+BlockHead:  
 A browser-based endless runner game built with vanilla JavaScript, HTML, and CSS.
 
 Features
