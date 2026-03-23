@@ -1,0 +1,87 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+button {
+    display: flex;
+}
+
+#intro {
+    border: 2px solid black;
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    margin-top: 200px;
+    position: relative;
+    background-image: url("Images/Block_Head_Intro.jpg");
+    background-size: 600px 400px;
+}
+
+#container {
+    border: 2px solid black;
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    margin-top: 200px;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+#character {
+    background-image: url("Images/Block_Head.jpg");
+    background-size: 80px;
+    border: solid 1px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    z-index: 1;
+}
+
+.obstacle {
+    background-image: url("Images/Triangle1.jpg");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: obstacle 3s linear infinite;
+}
+
+@keyframes obstacle {
+    0%{right: 0%;}
+    100%{right: 100%;}
+}
+
+#score {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+#level {
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+}
+
+#gameOver {
+    background-color: rgb(0 0 0 / 0.1);
+    height: 200px;
+    width: 400px;
+    margin: auto;
+    margin-top: 10vh;
+    display: none;
+    z-index: 2;
+    box-shadow: -8px 8px 10px rgb(0 0 0 / 0.7);
+}
+
+h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
